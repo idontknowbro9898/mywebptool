@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>WebP Converter Pro</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="langbar"><select id="langSelect"><option value="en">English</option><option value="fr">Français</option><option value="ru">Русский</option><option value="ar">العربية</option></select></div>
+<div class="container"><h1 id="title">JPG / PNG → WebP</h1><p id="subtitle" class="subtitle">Fast browser-side conversion. No upload to server.</p>
+<div id="dropzone" class="dropzone"><p id="droptext">Drag & Drop Image Here</p><p id="ortext">or</p><input type="file" id="fileInput" accept=".jpg,.jpeg,.png" hidden><button id="selectBtn">Choose Image</button><p>Max size: 8 MB</p></div>
+<div id="previewSection" class="hidden preview-wrap">
+<img id="preview">
+<div class="side">
+<div id="fileInfo"></div>
+<div id="webpInfo" class="hidden"></div>
+<div id="savedInfo" class="hidden"></div>
+<button id="convertBtn">Convert to WebP</button>
+<a id="downloadBtn" class="hidden" download="converted.webp">Download WebP</a>
+</div></div></div><script src="script.js"></script></body></html>
