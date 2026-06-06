@@ -1,1 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://myimgconvert.com/index.html</loc></url><url><loc>https://myimgconvert.com/png-to-webp.html</loc></url><url><loc>https://myimgconvert.com/jpg-to-webp.html</loc></url><url><loc>https://myimgconvert.com/webp-to-png.html</loc></url><url><loc>https://myimgconvert.com/webp-to-jpg.html</loc></url><url><loc>https://myimgconvert.com/image-compressor.html</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+<loc>https://myimgconvert.com/</loc>
+</url>
+
+<url>
+<loc>https://myimgconvert.com/png-to-webp.html</loc>
+</url>
+
+<url>
+<loc>https://myimgconvert.com/jpg-to-webp.html</loc>
+</url>
+
+<url>
+<loc>https://myimgconvert.com/webp-to-png.html</loc>
+</url>
+
+<url>
+<loc>https://myimgconvert.com/webp-to-jpg.html</loc>
+</url>
+
+<url>
+<loc>https://myimgconvert.com/image-compressor.html</loc>
+</url>
+
+</urlset>
