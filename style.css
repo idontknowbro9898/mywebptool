@@ -13,7 +13,7 @@
 *{
 margin:0;
 padding:0;
-text-decoraion:none;
+text-decoration:none;
 box-sizing:border-box;
 }
 
@@ -24,17 +24,62 @@ scroll-behavior:smooth;
 body{
 font-family:Inter,system-ui,sans-serif;
 background:var(--bg);
-background-image:
-radial-gradient(circle at top left,#1e293b 0%,transparent 30%),
-radial-gradient(circle at bottom right,#0ea5e9 0%,transparent 20%);
 color:var(--text);
 min-height:100vh;
 overflow-x:hidden;
+position:relative;
+isolation:isolate;
 }
+
+/* =========================
+   ✨ ANIMATED BACKGROUND
+========================= */
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+z-index:-2;
+
+background:
+radial-gradient(circle at 20% 20%, rgba(14,165,233,.18), transparent 40%),
+radial-gradient(circle at 80% 30%, rgba(59,130,246,.14), transparent 45%),
+radial-gradient(circle at 50% 90%, rgba(34,197,94,.08), transparent 45%);
+
+filter: blur(50px);
+transform: scale(1.2);
+animation: floatBg 20s ease-in-out infinite;
+}
+
+@keyframes floatBg{
+0%{
+transform: translate(0,0) scale(1.2);
+}
+50%{
+transform: translate(-25px, 20px) scale(1.25);
+}
+100%{
+transform: translate(0,0) scale(1.2);
+}
+}
+
+/* subtle noise overlay */
+body::after{
+content:"";
+position:fixed;
+inset:0;
+z-index:-1;
+pointer-events:none;
+
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");
+}
+
+/* =========================
+   LINKS
+========================= */
 
 a{
 color:#60a5fa;
-text-decoration:none;
 transition:.25s;
 }
 
@@ -42,13 +87,19 @@ a:hover{
 color:#93c5fd;
 }
 
+/* =========================
+   CONTAINER
+========================= */
+
 .container{
 max-width:1100px;
 margin:auto;
 padding:24px;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 
 .header{
 display:flex;
@@ -67,10 +118,11 @@ font-weight:800;
 .header h1 a,
 .header h2 a{
 color:#fff;
-text-decoration:none;
 }
 
-/* NAVIGATION */
+/* =========================
+   NAV
+========================= */
 
 .nav{
 display:flex;
@@ -85,6 +137,7 @@ border:1px solid var(--border);
 border-radius:12px;
 color:#cbd5e1;
 font-size:.95rem;
+transition:.25s;
 }
 
 .nav a:hover{
@@ -93,18 +146,18 @@ color:#fff;
 transform:translateY(-2px);
 }
 
-/* MAIN CARD */
+/* =========================
+   CARD
+========================= */
 
 .card{
 max-width:850px;
 margin:0 auto;
-padding:0;
-background:none;
-border:none;
-box-shadow:none;
 }
 
-/* DROPZONE */
+/* =========================
+   DROPZONE
+========================= */
 
 .dropzone{
 background:rgba(17,24,39,.9);
@@ -113,6 +166,7 @@ border-radius:24px;
 padding:60px 20px;
 text-align:center;
 transition:.3s;
+backdrop-filter: blur(10px);
 }
 
 .dropzone:hover{
@@ -125,7 +179,9 @@ margin-bottom:10px;
 color:var(--muted);
 }
 
-/* PREVIEW */
+/* =========================
+   PREVIEW
+========================= */
 
 .preview-wrap{
 margin-top:30px;
@@ -137,6 +193,7 @@ border-radius:24px;
 display:grid;
 grid-template-columns:320px 1fr;
 gap:24px;
+backdrop-filter: blur(10px);
 }
 
 #preview{
@@ -164,7 +221,9 @@ border:1px solid var(--border);
 border-radius:14px;
 }
 
-/* BUTTONS */
+/* =========================
+   BUTTONS
+========================= */
 
 button,
 a.btn{
@@ -174,7 +233,6 @@ border-radius:14px;
 padding:14px 18px;
 font-weight:600;
 font-size:.95rem;
-text-decoration:none;
 transition:.25s;
 }
 
@@ -192,15 +250,17 @@ display:block;
 width:100%;
 text-align:center;
 background:var(--success);
-color:#fff;
 margin-top:6px;
+color:#fff;
 }
 
 #downloadBtn:hover{
 filter:brightness(1.05);
 }
 
-/* SEO SECTION */
+/* =========================
+   SEO SECTION
+========================= */
 
 .seo{
 margin-top:80px;
@@ -212,6 +272,7 @@ line-height:1.9;
 max-width:1000px;
 margin-left:auto;
 margin-right:auto;
+backdrop-filter: blur(10px);
 }
 
 .seo h2{
@@ -228,23 +289,25 @@ color:#cbd5e1;
 
 .seo a{
 color:#60a5fa;
-text-decoration:none;
 }
 
 .seo a:hover{
 color:#93c5fd;
 }
 
-/* HIDDEN */
+/* =========================
+   UTILITIES
+========================= */
 
 .hidden{
 display:none!important;
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:900px){
-
 .preview-wrap{
 grid-template-columns:1fr;
 }
@@ -252,7 +315,6 @@ grid-template-columns:1fr;
 #preview{
 height:260px;
 }
-
 }
 
 @media(max-width:768px){
@@ -277,7 +339,6 @@ display:none;
 .nav a{
 white-space:nowrap;
 }
-
 }
 
 @media(max-width:480px){
@@ -308,5 +369,4 @@ width:100%;
 padding:25px;
 font-size:.95rem;
 }
-
 }
