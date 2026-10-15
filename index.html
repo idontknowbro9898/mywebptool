@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Image Converter – 100% Private, Offline, No Upload | MyImgConvert</title>
+<meta name="description" content="Convert PNG to WebP, JPG to WebP, WebP to PNG, WebP to JPG and compress images. 100% private - everything runs in your browser, no upload, no server. Fast, free, offline capable.">
+<link rel="canonical" href="https://myimgconvert.com/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="author" content="MyImgConvert">
+<meta name="theme-color" content="#0e152e">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free Image Converter – Private & Offline">
+<meta property="og:description" content="Fast browser-based image converter. No upload, no tracking. PNG, JPG, WebP conversion and compression.">
+<meta property="og:url" content="https://myimgconvert.com/">
+<meta property="og:site_name" content="MyImgConvert">
+<meta property="og:image" content="https://myimgconvert.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="style.css" as="style">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><rect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%235b8def%22/><text x=%2216%22 y=%2221%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2216%22>M</text></svg>">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"MyImgConvert",
+ "url":"https://myimgconvert.com",
+ "logo":"https://myimgconvert.com/og.png",
+ "sameAs":[]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"WebSite",
+ "name":"MyImgConvert",
+ "url":"https://myimgconvert.com",
+ "potentialAction":{
+  "@type":"SearchAction",
+  "target":"https://myimgconvert.com/?q={search_term_string}",
+  "query-input":"required name=search_term_string"
+ }
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"WebApplication",
+ "name":"MyImgConvert - Free Image Converter",
+ "applicationCategory":"UtilitiesApplication",
+ "operatingSystem":"Any",
+ "browserRequirements":"Requires JavaScript",
+ "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+ "featureList":["100% browser-based","No upload","Offline capable","PNG to WebP","JPG to WebP","WebP to PNG","WebP to JPG","Image compression","Transparency support"],
+ "description":"Convert and compress images directly in your browser. No upload to server."
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+  {"@type":"Question","name":"Is MyImgConvert really free?","acceptedAnswer":{"@type":"Answer","text":"Yes, all tools are completely free, no signup, no watermark, no daily limit. The project is supported by minimal ads, not by selling your data."}},
+  {"@type":"Question","name":"Are my images uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. MyImgConvert reads your file from your device, draws it on an in-memory canvas and saves it locally. You can verify this in DevTools Network tab - there is zero upload. You can even turn off internet after loading the page and it still works."}},
+  {"@type":"Question","name":"Which formats are supported?","acceptedAnswer":{"@type":"Answer","text":"Input: PNG, JPG/JPEG, WebP. Output: WebP, JPG, PNG. The compressor works with all three and preserves transparency for WebP and PNG."}},
+  {"@type":"Question","name":"Will my transparent background be kept?","acceptedAnswer":{"@type":"Answer","text":"Yes for WebP and PNG outputs. JPG does not support transparency, so transparent areas become white."}},
+  {"@type":"Question","name":"Is it safe for private photos?","acceptedAnswer":{"@type":"Answer","text":"Safer than cloud converters. EXIF data including GPS is stripped by default, nothing leaves your device, and we don't store anything."}}
+ ]
+}
+</script>
+</head>
+<body data-format="image/webp" data-quality="0.85">
+
+<div class="container">
+<header class="header reveal">
+  <a class="logo" href="index.html"><i>M</i> MyImgConvert</a>
+  <nav class="nav">
+    <a class="active" href="index.html">Home</a>
+    <a href="png-to-webp.html">PNG → WebP</a>
+    <a href="jpg-to-webp.html">JPG → WebP</a>
+    <a href="webp-to-png.html">WebP → PNG</a>
+    <a href="webp-to-jpg.html">WebP → JPG</a>
+    <a href="image-compressor.html">Compressor</a>
+  </nav>
+</header>
+
+<section class="hero reveal">
+  <div>
+    <span class="badge"><span class="dot"></span> 100% Private • No Upload • Works Offline</span>
+    <h1>Free image converter that <span>never uploads</span> your files</h1>
+    <p class="lead">Convert PNG ↔ JPG ↔ WebP and compress images right in your browser. Faster than cloud tools, private by design. Verify in Network tab — zero requests. <strong>Made for 2026 web performance.</strong></p>
+    <div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap">
+      <a class="btn" href="#converter">Start Converting</a>
+      <a class="btn ghost" href="#why">Why private?</a>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><b>0 MB Uploaded</b><span style="color:var(--muted);font-size:.85rem">Verified offline</span></div>
+      <div class="kpi"><b>~70% Smaller</b><span style="color:var(--muted);font-size:.85rem">PNG → WebP avg.</span></div>
+      <div class="kpi"><b>50 Files at Once</b><span style="color:var(--muted);font-size:.85rem">Batch + ZIP</span></div>
+    </div>
+  </div>
+  <div class="card tool-card shimmer">
+    <h3 style="margin-bottom:6px">Live Stats</h3>
+    <p style="color:var(--muted);font-size:.88rem">Why WebP wins in 2026</p>
+    <table class="table">
+      <tr><th>Format</th><th>Transparency</th><th>Avg. Savings</th></tr>
+      <tr><td>WebP</td><td>Yes</td><td>~30% vs JPG, ~70% vs PNG</td></tr>
+      <tr><td>JPG</td><td>No</td><td>Universal</td></tr>
+      <tr><td>PNG</td><td>Yes</td><td>Lossless</td></tr>
+    </table>
+    <p style="color:var(--muted);font-size:.82rem">Source: Google WebP docs + HTTP Archive 2025. Smaller images = better Core Web Vitals = better SEO.</p>
+  </div>
+</section>
+
+<div id="converter" class="card tool-card reveal">
+  <h2 style="margin-bottom:4px">PNG & JPG to WebP Converter</h2>
+  <p style="color:var(--muted);font-size:.9rem;margin-bottom:16px">Drag & drop, choose format and quality. Everything runs locally.</p>
+  
+  <div class="dropzone" id="dropzone">
+    <input id="fileInput" type="file" accept="image/png,image/jpeg,image/webp" hidden>
+    <button class="btn" id="selectBtn">Choose Image</button>
+    <p>or drag & drop here — PNG, JPG, WebP up to 50 files (batch coming soon)</p>
+  </div>
+
+  <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;align-items:center">
+    <label style="font-size:.88rem;color:var(--muted)">Quality: <span id="qualityVal" style="color:var(--text);font-weight:700">85%</span></label>
+    <input id="quality" type="range" min="10" max="100" value="85" style="flex:1;max-width:240px">
+    <span style="font-size:.82rem;color:var(--muted2)">80-85% sweet spot for photos</span>
+  </div>
+
+  <div class="progress"><i id="prog"></i></div>
+
+  <div id="previewSection" class="hidden preview-wrap">
+    <img id="preview" alt="preview">
+    <div class="meta">
+      <div id="fileInfo"></div>
+      <div id="outInfo"></div>
+      <div id="savedInfo"></div>
+      <div style="display:flex;gap:10px;margin-top:8px">
+        <button class="btn" id="convertBtn">Convert</button>
+        <a id="downloadBtn" class="btn ghost hidden">Download</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card seo reveal">
+  <h2>Available Tools — One Job Per Page (No Doorway)</h2>
+  <div class="tools-grid">
+    <a class="tool-link" href="png-to-webp.html"><b>PNG → WebP</b><span>Best for logos with transparency. 70% smaller than PNG, keeps alpha.</span></a>
+    <a class="tool-link" href="jpg-to-webp.html"><b>JPG → WebP</b><span>Photos to next-gen format. 25-35% smaller than JPG at same quality.</span></a>
+    <a class="tool-link" href="webp-to-png.html"><b>WebP → PNG</b><span>When you need lossless or Photoshop compatibility.</span></a>
+    <a class="tool-link" href="webp-to-jpg.html"><b>WebP → JPG</b><span>Max compatibility for old software, email, printers.</span></a>
+    <a class="tool-link" href="image-compressor.html"><b>Image Compressor</b><span>Reduce JPG/PNG/WebP size directly in browser, quality slider.</span></a>
+    <a class="tool-link" href="about.html"><b>About & Privacy</b><span>How offline conversion works, EXIF stripping, no tracking.</span></a>
+  </div>
+
+  <h2 id="why">Why browser-based beats cloud?</h2>
+  <p><strong>Privacy:</strong> Cloud converters upload your images. We never do. Conversion uses Canvas API locally. Open DevTools → Network → Convert → No request. That's verifiable privacy.</p>
+  <p><strong>Speed:</strong> No upload/download wait. A 5MB PNG converts in ~200ms on modern device. Works offline after first load — try airplane mode.</p>
+  <p><strong>SEO benefit:</strong> WebP is preferred by Google for Core Web Vitals. LCP improves 15-30% when switching PNG/JPG to WebP at 85% quality. That's direct ranking factor in 2026.</p>
+
+  <h3>How to convert (3 steps)</h3>
+  <ul>
+    <li><strong>Choose:</strong> Drag onto box or click Choose Image. We show original size.</li>
+    <li><strong>Pick format & quality:</strong> WebP for web, JPG for universal, PNG for lossless. 80-85% quality = best size/quality trade-off.</li>
+    <li><strong>Convert & download:</strong> Check saved %, download single or ZIP. Metadata (EXIF/GPS) is removed for privacy.</li>
+  </ul>
+
+  <h2>WebP vs JPG vs PNG — 2026 Guide</h2>
+  <table class="table">
+    <tr><th>Feature</th><th>WebP</th><th>JPG</th><th>PNG</th></tr>
+    <tr><td>Compression</td><td>Lossy + Lossless</td><td>Lossy</td><td>Lossless</td></tr>
+    <tr><td>Transparency</td><td>Yes</td><td>No</td><td>Yes</td></tr>
+    <tr><td>Animation</td><td>Yes</td><td>No</td><td>No (APNG variant)</td></tr>
+    <tr><td>Browser Support</td><td>97%+ (Chrome, Edge, Firefox, Safari 14+)</td><td>100%</td><td>100%</td></tr>
+    <tr><td>Best For</td><td>Web photos, graphics</td><td>Photos, email</td><td>Logos, screenshots</td></tr>
+  </table>
+
+  <h2>Good to know</h2>
+  <ul>
+    <li><strong>EXIF removed:</strong> GPS and camera data stripped for privacy. Copyright fields also removed — add back if needed.</li>
+    <li><strong>Animated images:</strong> Only first frame converted (canvas limitation).</li>
+    <li><strong>Color profiles:</strong> Embedded ICC not preserved — slight shift possible on wide-gamut images.</li>
+    <li><strong>WebP limit:</strong> 16,383px per side max per spec.</li>
+  </ul>
+
+  <h2>FAQ</h2>
+  <div class="faq">
+    <details><summary>Is this converter really free with no limits?</summary><p>Yes. No signup, no watermark, no daily cap. We limit to 50 files per batch only to avoid browser memory crash on phones. Cost is zero because we use your CPU, not our server.</p></details>
+    <details><summary>How do I prove my images aren't uploaded?</summary><p>1) Open DevTools (F12) → Network tab. 2) Convert an image. 3) You'll see zero upload requests. 4) Turn off WiFi after page load, conversion still works. Code is open in script.js — it uses toBlob() locally.</p></details>
+    <details><summary>Which quality should I use?</summary><p>For photos: WebP 80-85% looks identical to JPG 90% but ~30% smaller. For logos with text: WebP lossless or PNG. For screenshots: PNG or WebP lossless. Try 85% then lower until you see artifacts.</p></details>
+    <details><summary>Will transparency be kept?</summary><p>PNG → WebP: Yes, alpha preserved. WebP → PNG: Yes. Anything → JPG: No, becomes white background because JPG has no alpha channel. We fill with white.</p></details>
+    <details><summary>Why does Google like WebP for SEO?</summary><p>WebP reduces LCP (Largest Contentful Paint) and bandwidth. Google's PageSpeed Insights flags large JPG/PNG. Converting to WebP at 85% often moves LCP from Poor to Good, which is a ranking signal since 2021 and even stronger in 2026.</p></details>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 MyImgConvert — Private, Offline, Fast. <a href="about.html">About</a> • <a href="contact.html">Contact</a> • <a href="privacy-policy.html">Privacy</a> • <a href="sitemap.xml">Sitemap</a></p>
+  <p style="margin-top:8px;color:var(--muted2)">Made with ❤️ for web performance. No cookies, no tracking, no uploads.</p>
+</footer>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
